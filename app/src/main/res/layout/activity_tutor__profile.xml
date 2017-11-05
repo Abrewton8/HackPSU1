@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.barelypassing.hackpsu.Tutor_Profile">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="339dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="16dp"
+        android:text="Build your tutor profile"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="69dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="55dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="81dp"
+        android:text="Class:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toStartOf="@+id/classTextField"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="68dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="67dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="55dp"
+        android:text="Name:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="57dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="56dp"
+        android:layout_marginStart="55dp"
+        android:text="Digits:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Title"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="58dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="92dp"
+        android:layout_marginStart="52dp"
+        android:text="Major:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/classTextField"
+        android:layout_width="215dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="29dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="ex. MATH 100"
+        app:layout_constraintBottom_toTopOf="@+id/nameTextField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <EditText
+        android:id="@+id/nameTextField"
+        android:layout_width="215dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="First and Last"
+        app:layout_constraintBottom_toTopOf="@+id/phoneTextField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/classTextField" />
+
+    <EditText
+        android:id="@+id/phoneTextField"
+        android:layout_width="215dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="46dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="37dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="999-999-9999"
+        app:layout_constraintBottom_toTopOf="@+id/majorTextField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/majorTextField"
+        android:layout_width="215dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="76dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginStart="39dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="ex. English"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="446dp" />
+</android.support.constraint.ConstraintLayout>
